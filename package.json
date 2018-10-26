@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cpx src/index.html docs & browserify -t brfs src/index.js -o docs/bundle.js"
+    "build": "browserify -t brfs src/index.js -o docs/bundle.js & node builder.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,9 @@
   },
   "homepage": "https://github.com/RThevenoux/ipa-parser-demo#readme",
   "dependencies": {
-    "ipa-parser": "^1.0.1"
+    "ipa-parser": "1.0.2"
   },
   "devDependencies": {
-    "brfs": "^2.0.1",
-    "cpx": "^1.5.0"
+    "brfs": "^2.0.1"
   }
 }
