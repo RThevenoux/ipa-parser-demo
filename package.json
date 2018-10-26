@@ -1,0 +1,26 @@
+{
+  "name": "ipa-parser-demo",
+  "version": "0.0.1",
+  "description": "A very simple demo of the ipa-parser package ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t brfs src/index.js -o src/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RThevenoux/ipa-parser-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RThevenoux/ipa-parser-demo/issues"
+  },
+  "homepage": "https://github.com/RThevenoux/ipa-parser-demo#readme",
+  "dependencies": {
+    "ipa-parser": "^1.0.1"
+  },
+  "devDependencies": {
+    "brfs": "^2.0.1"
+  }
+}
